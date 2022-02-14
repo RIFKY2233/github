@@ -1,0 +1,75 @@
+
+-0P@-0P-PC MINGW32 /c
+$ mkdir git-basic
+
+-0P@-0P-PC MINGW32 /c
+$ cd git-basic
+
+-0P@-0P-PC MINGW32 /c/git-basic
+$ touch first.txt
+
+-0P@-0P-PC MINGW32 /c/git-basic
+$ git init
+Initialized empty Git repository in C:/git-basic/.git/
+
+-0P@-0P-PC MINGW32 /c/git-basic (master)
+$ git add first.txt
+
+-0P@-0P-PC MINGW32 /c/git-basic (master)
+$ git commit -m "adding first.txt"
+[master (root-commit) c80bf34] adding first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first.txt
+
+-0P@-0P-PC MINGW32 /c/git-basic (master)
+$ git log
+commit c80bf341955a4a32f18bac7ea758df4f50c7717f (HEAD -> master)
+Author: muhammad rifky khadafi <rifkykhadafi@gmail.com>
+Date:   Mon Feb 14 13:32:09 2022 +0700
+
+    adding first.txt
+
+-0P@-0P-PC MINGW32 /c/git-basic (master)
+$ touch second.txt
+
+-0P@-0P-PC MINGW32 /c/git-basic (master)
+$ git add second.txt
+
+-0P@-0P-PC MINGW32 /c/git-basic (master)
+$ git commit -m "adding second.txt"
+[master 8adddcb] adding second.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 second.txt
+
+-0P@-0P-PC MINGW32 /c/git-basic (master)
+$ rm first.txt
+
+-0P@-0P-PC MINGW32 /c/git-basic (master)
+$ git add first.txt
+
+-0P@-0P-PC MINGW32 /c/git-basic (master)
+$ git commit -m "removing first.txt"
+[master 9e51b2b] removing first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 first.txt
+
+-0P@-0P-PC MINGW32 /c/git-basic (master)
+$ git log
+commit 9e51b2ba84e60c89ae5223988984d2e0143cde80 (HEAD -> master)
+Author: muhammad rifky khadafi <rifkykhadafi@gmail.com>
+Date:   Mon Feb 14 13:35:51 2022 +0700
+
+    removing first.txt
+
+commit 8adddcbe19945ca995028552d53ddd24343789bc
+Author: muhammad rifky khadafi <rifkykhadafi@gmail.com>
+Date:   Mon Feb 14 13:33:59 2022 +0700
+
+    adding second.txt
+
+commit c80bf341955a4a32f18bac7ea758df4f50c7717f
+Author: muhammad rifky khadafi <rifkykhadafi@gmail.com>
+Date:   Mon Feb 14 13:32:09 2022 +0700
+
+    adding first.txt
+
